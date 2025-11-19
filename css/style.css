@@ -1,0 +1,24 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: seagreen;
+}
+#banner{
+	background:black;
+}
+.navigator a{
+	color: white;
+	text-decoration: none;
+}
+#title{
+	color: white;
+}
+.navigator ul{
+	list-style: none;
+	display: flex;
+
+}
