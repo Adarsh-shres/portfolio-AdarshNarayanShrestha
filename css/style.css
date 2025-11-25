@@ -6,22 +6,73 @@
 }
 
 body{
-	background: seagreen;
-	font-family: arial;
+	background-color: white;
+	color: black;
+	padding-top: 80px;
+	 font-family: "Bruno Ace SC", serif ;
 
 }
 #banner{
-	background:black;
+	background:	#3a0a45;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	position:fixed;
+	top: 0;
+	left:0;
+	z-index: 2;
+	width: 100%;
+	font-weight: 700;
+ 	font-family: "Bruno Ace SC", serif;
+
+
 }
 .navigator a{
+	display: inline-block;
+	padding: 8px 16px;
+	transition: background 0.15 ease,transform 0.1 ease;
 	color: white;
 	text-decoration: none;
 }
+.navigator a:hover{
+	background: #8EDF5F;
+	transform: scale(1.067);
+}
+.about{
+	flex-direction: column;
+}
+.about p{
+	margin-left: 40px;	
+}
+.aboutRow{
+	display: flex;
+	align-items: center;
+}
+
+#profilePic{
+	width: 500px;
+	height: 520px;
+	border-radius: 50%;
+}
+
 #title{
 	color: white;
 }
 .navigator ul{
 	list-style: none;
 	display: flex;
+	gap: 30px;
+	margin-right: 50px;
+	margin-top: 7px;
 
+}
+@media (max-width: 600px){
+	.aboutRow{
+		flex-direction: column;
+		text-align: center;
+	}
+#profilePic{
+	width: 120px;
+	height: 120px;
+}
 }
